@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EE5E443A-8145-49FE-B8D7-17C165ED89EA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Activator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MainApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Activator">
+        <MSBuild Projects="Activator.dproj"/>
+    </Target>
+    <Target Name="Activator:Clean">
+        <MSBuild Projects="Activator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Activator:Make">
+        <MSBuild Projects="Activator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MainApp">
+        <MSBuild Projects="MainApp.dproj"/>
+    </Target>
+    <Target Name="MainApp:Clean">
+        <MSBuild Projects="MainApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MainApp:Make">
+        <MSBuild Projects="MainApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Activator;MainApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Activator:Clean;MainApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Activator:Make;MainApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,27 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TetheringManager1: TTetheringManager
+    Text = 'TetheringManager1'
+    AllowedAdapters = 'Network'
+    Left = 312
+    Top = 160
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Manager = TetheringManager1
+    Text = 'TetheringAppProfile1'
+    Group = 'DelphiMastering'
+    Actions = <>
+    Resources = <>
+    Left = 312
+    Top = 232
+  end
+end

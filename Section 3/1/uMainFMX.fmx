@@ -1,0 +1,77 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'FMX Database DEMO'
+  ClientHeight = 627
+  ClientWidth = 760
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object StringGridBindSourceDB1: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 760.000000000000000000
+    Size.Height = 602.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    RowCount = 91
+    Viewport.Width = 740.000000000000000000
+    Viewport.Height = 577.000000000000000000
+  end
+  object NavigatorBindSourceDB1: TBindNavigator
+    Align = Top
+    Size.Width = 760.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object FDConnectionSQLite_Demo: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=SQLite_Demo')
+    Connected = True
+    LoginPrompt = False
+    Left = 376
+    Top = 96
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 328
+    Top = 184
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 248
+    Top = 272
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDQuery1
+    ScopeMappings = <>
+    Left = 160
+    Top = 80
+  end
+  object FDQuery1: TFDQuery
+    Active = True
+    Connection = FDConnectionSQLite_Demo
+    SQL.Strings = (
+      'SELECT * FROM Customers')
+    Left = 336
+    Top = 320
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 156
+    Top = 149
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGridBindSourceDB1
+      Columns = <>
+    end
+  end
+end

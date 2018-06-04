@@ -1,0 +1,160 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'REST Demo 5.4'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object GridBindSourceDB1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 40.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 249.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Viewport.Width = 348.000000000000000000
+    Viewport.Height = 217.000000000000000000
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'quia et suscipit'
+      'suscipit recusandae consequuntur expedita et cum'
+      'reprehenderit molestiae ut ut quas totam'
+      'nostrum rerum est autem sunt rem eveniet architecto')
+    Position.X = 40.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 169.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Viewport.Width = 337.000000000000000000
+    Viewport.Height = 156.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Text = 
+      'sunt aut facere repellat provident occaecati excepturi optio rep' +
+      'rehenderit'
+    Position.X = 160.000000000000000000
+    Position.Y = 288.000000000000000000
+  end
+  object Label1: TLabel
+    Position.X = 56.000000000000000000
+    Position.Y = 296.000000000000000000
+    Text = '1'
+    TabOrder = 10
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'https://jsonplaceholder.typicode.com/posts'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 56
+    Top = 112
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 56
+    Top = 176
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    Left = 56
+    Top = 240
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    Response = RESTResponse1
+    Left = 528
+    Top = 56
+  end
+  object FDMemTable1: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'userId'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'id'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'title'
+        DataType = ftWideString
+        Size = 255
+      end
+      item
+        Name = 'body'
+        DataType = ftWideString
+        Size = 255
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 528
+    Top = 120
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 400
+    Top = 264
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = GridBindSourceDB1
+      Columns = <>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'id'
+      Component = Label1
+      ComponentProperty = 'Text'
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'body'
+      Control = Memo1
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'title'
+      Control = Edit1
+      Track = False
+    end
+  end
+end

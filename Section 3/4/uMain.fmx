@@ -1,0 +1,216 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Demo App'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Touch.GestureManager = GestureManager1
+    Align = Client
+    Margins.Left = 2.000000000000000000
+    Margins.Top = 2.000000000000000000
+    Margins.Right = 2.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Size.Width = 636.000000000000000000
+    Size.Height = 476.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      636s
+      476s
+      636s
+      476s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar1: TToolBar
+        Size.Width = 636.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblMainTab: TLabel
+          Align = Contents
+          StyledSettings = [Family, FontColor]
+          Size.Width = 636.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = '  Main tab'
+          TabOrder = 0
+        end
+        object Button1: TButton
+          Action = NextTabAction1
+          Align = MostRight
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 588.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowrighttoolbutton'
+          TabOrder = 1
+        end
+      end
+      object ListView1: TListView
+        Touch.GestureManager = GestureManager1
+        ItemAppearanceClassName = 'TDynamicAppearance'
+        ItemEditAppearanceClassName = 'TDynamicAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 0
+        Align = Client
+        Size.Width = 636.000000000000000000
+        Size.Height = 428.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Title'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Font.Size = 14.000000000000000000
+            Appearance.TextAlign = Leading
+            Appearance.TextColor = claNavy
+            Appearance.Width = 561.000000000000000000
+            Appearance.Height = 22.000000000000000000
+            Appearance.PlaceOffset.X = 78.000000000000000000
+          end
+          item
+            AppearanceObjectName = 'Name'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.TextAlign = Leading
+            Appearance.TextColor = claDarkgreen
+            Appearance.Height = 25.000000000000000000
+            Appearance.PlaceOffset.X = 90.000000000000000000
+            Appearance.PlaceOffset.Y = 21.000000000000000000
+          end
+          item
+            AppearanceObjectName = 'Image'
+            AppearanceClassName = 'TImageObjectAppearance'
+            Appearance.Width = 65.000000000000000000
+            Appearance.Height = 75.000000000000000000
+            Appearance.PlaceOffset.X = -2.000000000000000000
+          end
+          item
+            AppearanceObjectName = 'Text4'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Font.Family = 'Tahoma'
+            Appearance.Font.Size = 16.000000000000000000
+            Appearance.Font.StyleExt = {00070000000000000004000000}
+            Appearance.TextColor = claNavy
+            Appearance.Width = 119.000000000000000000
+            Appearance.Height = 44.000000000000000000
+            Appearance.Align = Center
+            Appearance.PlaceOffset.X = 248.000000000000000000
+          end>
+        ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Text1'
+            AppearanceClassName = 'TTextObjectAppearance'
+          end>
+        ItemAppearanceObjects.FooterObjects.Text.Width = 615.000000000000000000
+        ItemAppearanceObjects.FooterObjects.Text.Height = 21.000000000000000000
+        ItemAppearanceObjects.FooterObjects.Text.PlaceOffset.Y = 8.000000000000000000
+        CanSwipeDelete = False
+        SearchVisible = True
+        NativeOptions = [Grouped, Styled]
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar2: TToolBar
+        Size.Width = 636.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Contents
+          StyledSettings = [Family, FontColor]
+          Size.Width = 636.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = '  Detail  tab'
+          TabOrder = 0
+        end
+        object Button2: TButton
+          Action = PreviousTabAction1
+          Align = MostLeft
+          Enabled = True
+          ImageIndex = -1
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowlefttoolbutton'
+          TabOrder = 1
+        end
+        object Button3: TButton
+          Action = LiveBindingsBindNavigateNext1
+          Align = MostRight
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 540.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowdowntoolbutton'
+          TabOrder = 2
+        end
+        object Button4: TButton
+          Action = LiveBindingsBindNavigatePrior1
+          Align = MostRight
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 588.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowuptoolbutton'
+          TabOrder = 3
+        end
+      end
+      object Image1: TImage
+        Touch.GestureManager = GestureManager1
+        MultiResBitmap = <
+          item
+            Width = 250
+            Height = 150
+            PNG = {}
+    Active = True
+    Aggregates = <>
+    Params = <>
+    Left = 88
+    Top = 248
+  end
+end

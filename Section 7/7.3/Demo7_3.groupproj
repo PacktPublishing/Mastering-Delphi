@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E23AA23E-9FE5-45A1-A329-EBE765CD034C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PracticeOne.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PracticeTwo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PracticeThree.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PrcFour.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PracticeOne">
+        <MSBuild Projects="PracticeOne.dproj"/>
+    </Target>
+    <Target Name="PracticeOne:Clean">
+        <MSBuild Projects="PracticeOne.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PracticeOne:Make">
+        <MSBuild Projects="PracticeOne.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PracticeTwo">
+        <MSBuild Projects="PracticeTwo.dproj"/>
+    </Target>
+    <Target Name="PracticeTwo:Clean">
+        <MSBuild Projects="PracticeTwo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PracticeTwo:Make">
+        <MSBuild Projects="PracticeTwo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PracticeThree">
+        <MSBuild Projects="PracticeThree.dproj"/>
+    </Target>
+    <Target Name="PracticeThree:Clean">
+        <MSBuild Projects="PracticeThree.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PracticeThree:Make">
+        <MSBuild Projects="PracticeThree.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PrcFour">
+        <MSBuild Projects="PrcFour.dproj"/>
+    </Target>
+    <Target Name="PrcFour:Clean">
+        <MSBuild Projects="PrcFour.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PrcFour:Make">
+        <MSBuild Projects="PrcFour.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PracticeOne;PracticeTwo;PracticeThree;PrcFour"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PracticeOne:Clean;PracticeTwo:Clean;PracticeThree:Clean;PrcFour:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PracticeOne:Make;PracticeTwo:Make;PracticeThree:Make;PrcFour:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

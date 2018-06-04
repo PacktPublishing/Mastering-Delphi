@@ -1,0 +1,4 @@
+inherited Form3_Windows: TForm3_Windows
+  Caption = 'Windows Desktop'
+  DesignerMasterStyle = 0
+end

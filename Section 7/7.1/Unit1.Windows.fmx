@@ -1,0 +1,61 @@
+inherited Form1_Windows: TForm1_Windows
+  Caption = 'Windows Desktop'
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Sizes = (
+      640s
+      417s
+      640s
+      417s
+      640s
+      417s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+      inherited GridLayout1: TGridLayout
+        Size.Width = 640.000000000000000000
+        Size.Height = 417.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+      inherited GridLayout2: TGridLayout
+        Size.Width = 640.000000000000000000
+        Size.Height = 417.000000000000000000
+        inherited Button21: TButton
+          Position.X = 579.000000000000000000
+          Position.Y = 3.000000000000000000
+        end
+        inherited Button22: TButton
+          Position.X = 3.000000000000000000
+        end
+        inherited Button23: TButton
+          Position.X = 67.000000000000000000
+        end
+        inherited Button24: TButton
+          Position.X = 131.000000000000000000
+        end
+        inherited Button25: TButton
+          Position.X = 195.000000000000000000
+        end
+        inherited Button26: TButton
+          Position.X = 259.000000000000000000
+        end
+      end
+    end
+    inherited TabItem3: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+  end
+  inherited MultiView1: TMultiView
+    Size.Width = 233.000000000000000000
+    inherited SpeedButton2: TSpeedButton
+      Size.Width = 233.000000000000000000
+    end
+    inherited SpeedButton3: TSpeedButton
+      Size.Width = 233.000000000000000000
+    end
+  end
+end

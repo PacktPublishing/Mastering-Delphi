@@ -1,0 +1,37 @@
+inherited FormMain_LgXhdpiPh: TFormMain_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ListBox1: TListBox
+    Position.X = 40.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 409.000000000000000000
+    Size.PlatformDefault = False
+    Viewport.Width = 305.000000000000000000
+    Viewport.Height = 409.000000000000000000
+  end
+  inherited Button1: TButton
+    Position.X = 160.000000000000000000
+    Position.Y = 80.000000000000000000
+  end
+  inherited Edit1: TEdit
+    Size.Width = 385.000000000000000000
+  end
+  inherited Switch1: TSwitch
+    Position.X = 48.000000000000000000
+    Position.Y = 136.000000000000000000
+  end
+  inherited StyleBook1: TStyleBook [4]
+    Left = 400
+  end
+  inherited StyleBook2: TStyleBook [5]
+    Left = 392
+  end
+  inherited StyleBook3: TStyleBook [6]
+    Styles = <
+      item
+        ResourcesBin = {}
+      end>
+  end
+end

@@ -1,0 +1,18 @@
+inherited FormMain_NmXhdpiPh: TFormMain_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited Edit1: TEdit
+    Size.Width = 313.000000000000000000
+  end
+  inherited Button1: TButton
+    Position.X = 120.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 337.000000000000000000
+    Size.Height = 441.000000000000000000
+    Size.PlatformDefault = False
+    Viewport.Width = 337.000000000000000000
+    Viewport.Height = 441.000000000000000000
+  end
+end

@@ -1,0 +1,10 @@
+inherited Form2_Windows: TForm2_Windows
+  Caption = 'Windows Desktop'
+  DesignerMasterStyle = 0
+  inherited FlowLayout1: TFlowLayout
+    inherited Memo1: TMemo
+      Viewport.Width = 220.000000000000000000
+      Viewport.Height = 327.000000000000000000
+    end
+  end
+end

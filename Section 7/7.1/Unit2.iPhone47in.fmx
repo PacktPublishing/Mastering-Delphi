@@ -1,0 +1,22 @@
+inherited Form2_iPhone47in: TForm2_iPhone47in
+  ClientHeight = 355
+  ClientWidth = 667
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 667.000000000000000000
+  end
+  inherited FlowLayout1: TFlowLayout
+    Size.Width = 667.000000000000000000
+    Size.Height = 315.000000000000000000
+    inherited Memo1: TMemo
+      Size.Width = 246.000000000000000000
+      Size.Height = 300.000000000000000000
+      Viewport.Width = 246.000000000000000000
+      Viewport.Height = 300.000000000000000000
+    end
+  end
+  inherited StyleBook1: TStyleBook
+    Left = 40
+    Top = 304
+  end
+end

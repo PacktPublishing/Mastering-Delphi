@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{44F6AC79-F5C3-4195-8372-AA71ACA69C90}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="TetherAppFromMasteringDelphi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\TetherClientApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TetherAppFromMasteringDelphi">
+        <MSBuild Projects="TetherAppFromMasteringDelphi.dproj"/>
+    </Target>
+    <Target Name="TetherAppFromMasteringDelphi:Clean">
+        <MSBuild Projects="TetherAppFromMasteringDelphi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TetherAppFromMasteringDelphi:Make">
+        <MSBuild Projects="TetherAppFromMasteringDelphi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TetherClientApp">
+        <MSBuild Projects="Client\TetherClientApp.dproj"/>
+    </Target>
+    <Target Name="TetherClientApp:Clean">
+        <MSBuild Projects="Client\TetherClientApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TetherClientApp:Make">
+        <MSBuild Projects="Client\TetherClientApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TetherAppFromMasteringDelphi;TetherClientApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TetherAppFromMasteringDelphi:Clean;TetherClientApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TetherAppFromMasteringDelphi:Make;TetherClientApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,12 @@
+inherited Form3_iPhone47in: TForm3_iPhone47in
+  ClientHeight = 647
+  ClientWidth = 375
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 375.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited SpeedButton1: TSpeedButton
+      Size.Height = 44.000000000000000000
+    end
+  end
+end

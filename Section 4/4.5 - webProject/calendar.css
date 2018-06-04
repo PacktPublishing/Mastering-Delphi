@@ -1,0 +1,159 @@
+.month-header {
+	background-image:url(https://pre00.deviantart.net/59bb/th/pre/i/2013/219/f/f/dog_stock_329_by_jaded_night_stock-d6h1yxz.jpg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:300px;
+    text-align:right;
+}
+
+.copyright-notice {
+    color:#FFF;
+    font-size:50%;
+    padding-right:50px;
+    text-align:right;
+    text-decoration:none;
+    vertical-align:bottom;
+}
+
+.weekday-header {
+    background-color:#999;
+    border-color:#ddd;
+    border-style:solid;
+    letter-spacing:1px;
+    line-height:25px;
+}
+
+.week {
+    background-color:#eaeaea;
+    height:75px;
+    margin:0;
+    text-align:left;
+    vertical-align:top;
+}
+
+.off-day {
+    background-color:#ddd;
+}
+
+.event {
+    margin: 5px 0;
+    color: #10171C;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.event.dog-walk {
+    background-color:#A6F4FF;
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+}
+
+.dog-walk {
+    background-color:#A6F4FF;
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+}
+
+.event.school {
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+    background-color:#BA9CE8;
+}
+
+.school {
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+    background-color:#BA9CE8;
+}
+
+.event.appointment {
+    background-color:#FF7E6D;
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+}
+
+.appointment {
+    background-color:#FF7E6D;
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+}
+
+.event.birthday {
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+    background-color:#AFFFAD;
+}
+
+.birthday {
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+    background-color:#AFFFAD;
+}
+
+.event.school {
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+    sbackground-color:#BA9CE8;
+}
+
+.event.holiday {
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+    background-color:#E8E193;
+}
+
+.holiday {
+    border-radius:5px;
+    color:#10171C;
+    padding:5px;
+    margin:5px 0;
+    background-color:#E8E193;
+}
+
+h1 {
+    color:#FFF;
+    font-size:200%;
+    font-weight:700;
+    letter-spacing:3px;
+    padding-right:50px;
+    padding-bottom:150px;
+    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px #000;
+    vertical-align:top;
+}
+
+ul {
+    font-size:75%;
+    list-style:none;
+    padding-left:20px;
+    padding-right:5px;
+}
+
+body {
+    font-family:Helvetica;
+}
+
+table {
+    table-layout:fixed;
+    width:70%;
+}

@@ -1,0 +1,69 @@
+inherited Form1_iPhone47in: TForm1_iPhone47in
+  ClientHeight = 355
+  ClientWidth = 667
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 667.000000000000000000
+    inherited SpeedButton1: TSpeedButton
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 667.000000000000000000
+    Size.Height = 315.000000000000000000
+    Sizes = (
+      667s
+      292s
+      667s
+      292s
+      667s
+      292s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+      inherited GridLayout1: TGridLayout
+        Size.Width = 667.000000000000000000
+        Size.Height = 292.000000000000000000
+        inherited Button10: TButton
+          Position.X = 579.000000000000000000
+          Position.Y = 3.000000000000000000
+        end
+        inherited Button11: TButton
+          Position.X = 3.000000000000000000
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+      inherited GridLayout2: TGridLayout
+        Size.Width = 667.000000000000000000
+        Size.Height = 292.000000000000000000
+        inherited Button21: TButton
+          Position.X = 579.000000000000000000
+          Position.Y = 3.000000000000000000
+        end
+        inherited Button22: TButton
+          Position.X = 3.000000000000000000
+        end
+        inherited Button23: TButton
+          Position.X = 67.000000000000000000
+        end
+        inherited Button24: TButton
+          Position.X = 131.000000000000000000
+        end
+        inherited Button25: TButton
+          Position.X = 195.000000000000000000
+        end
+        inherited Button26: TButton
+          Position.X = 259.000000000000000000
+        end
+      end
+    end
+    inherited TabItem3: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+  end
+end

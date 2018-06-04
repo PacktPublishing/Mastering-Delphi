@@ -1,0 +1,81 @@
+inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 400.000000000000000000
+    inherited SpeedButton1: TSpeedButton
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 400.000000000000000000
+    Size.Height = 575.000000000000000000
+    Sizes = (
+      400s
+      553s
+      400s
+      553s
+      400s
+      553s)
+    inherited TabItem1: TTabItem
+      Size.Width = 71.000000000000000000
+      Size.Height = 22.000000000000000000
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+      inherited GridLayout1: TGridLayout
+        Size.Width = 400.000000000000000000
+        Size.Height = 553.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 71.000000000000000000
+      Size.Height = 22.000000000000000000
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+      inherited GridLayout2: TGridLayout
+        Size.Width = 400.000000000000000000
+        Size.Height = 553.000000000000000000
+        inherited Button18: TButton
+          Position.X = 3.000000000000000000
+          Position.Y = 67.000000000000000000
+        end
+        inherited Button19: TButton
+          Position.X = 67.000000000000000000
+          Position.Y = 67.000000000000000000
+        end
+        inherited Button20: TButton
+          Position.X = 131.000000000000000000
+          Position.Y = 67.000000000000000000
+        end
+        inherited Button21: TButton
+          Position.X = 195.000000000000000000
+        end
+        inherited Button22: TButton
+          Position.X = 259.000000000000000000
+        end
+        inherited Button23: TButton
+          Position.X = 323.000000000000000000
+        end
+        inherited Button24: TButton
+          Position.X = 3.000000000000000000
+          Position.Y = 131.000000000000000000
+        end
+        inherited Button25: TButton
+          Position.X = 67.000000000000000000
+          Position.Y = 131.000000000000000000
+        end
+        inherited Button26: TButton
+          Position.X = 131.000000000000000000
+          Position.Y = 131.000000000000000000
+        end
+      end
+    end
+    inherited TabItem3: TTabItem
+      Size.Width = 71.000000000000000000
+      Size.Height = 22.000000000000000000
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 23.000000000000000000
+    end
+  end
+end

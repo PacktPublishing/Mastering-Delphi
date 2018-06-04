@@ -1,0 +1,113 @@
+inherited FormMain_Surface: TFormMain_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 1076.000000000000000000
+    Size.Height = 1916.000000000000000000
+    Sizes = (
+      1076s
+      1916s
+      1076s
+      1916s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited ToolBar1: TToolBar
+        Size.Width = 1076.000000000000000000
+        inherited lblMainTab: TLabel
+          Size.Width = 1076.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Button1: TButton
+          Position.X = 1028.000000000000000000
+        end
+      end
+      inherited ListView1: TListView
+        Size.Width = 1076.000000000000000000
+        Size.Height = 1868.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited ToolBar2: TToolBar
+        Size.Width = 1076.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 1076.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Button3: TButton
+          Position.X = 980.000000000000000000
+        end
+        inherited Button4: TButton
+          Position.X = 1028.000000000000000000
+        end
+      end
+      inherited Image1: TImage
+        Size.Width = 1076.000000000000000000
+      end
+      inherited lblTitle: TLabel
+        Size.Width = 1076.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited lblName: TLabel
+        Size.Width = 1076.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited Memo1: TMemo
+        Size.Width = 1070.000000000000000000
+        Size.Height = 1606.000000000000000000
+        Viewport.Width = 1070.000000000000000000
+        Viewport.Height = 1606.000000000000000000
+      end
+      inherited lblCM: TLabel
+        Size.Width = 1066.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+  inherited GestureManager1: TGestureManager
+    GestureData = <
+      item
+        Control = TabControl1
+        Collection = <
+          item
+            Action = NextTabAction1
+            GestureID = sgiLeft
+          end
+          item
+            Action = PreviousTabAction1
+            GestureID = sgiRight
+          end
+          item
+            Action = LiveBindingsBindNavigatePrior1
+            GestureID = sgiUp
+          end
+          item
+            Action = LiveBindingsBindNavigateNext1
+            GestureID = sgiDown
+          end>
+      end
+      item
+        Control = ListView1
+        Collection = <
+          item
+            Action = LiveBindingsBindNavigatePrior1
+            GestureID = sgiLeft
+          end>
+      end
+      item
+        Control = Image1
+        Collection = <
+          item
+            Action = LiveBindingsBindNavigatePrior1
+            GestureID = sgiUp
+          end
+          item
+            Action = LiveBindingsBindNavigateNext1
+            GestureID = sgiDown
+          end>
+      end>
+  end
+end

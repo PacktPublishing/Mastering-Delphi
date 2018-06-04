@@ -1,0 +1,51 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'The First Demo App'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 32.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Type Something'
+  end
+  object Button1: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Click Me!'
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Position.X = 24.000000000000000000
+    Position.Y = 104.000000000000000000
+    TabOrder = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 200.000000000000000000
+    Viewport.Height = 200.000000000000000000
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+        ResourcesBin = {}
+      end>
+    Left = 272
+    Top = 88
+  end
+end

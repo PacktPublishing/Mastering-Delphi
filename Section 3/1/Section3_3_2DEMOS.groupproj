@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{83DD9FAC-CA1E-44B3-A85D-ED23314D0541}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="VCLDBDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FMXDBDemo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="VCLDBDemo">
+        <MSBuild Projects="VCLDBDemo.dproj"/>
+    </Target>
+    <Target Name="VCLDBDemo:Clean">
+        <MSBuild Projects="VCLDBDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLDBDemo:Make">
+        <MSBuild Projects="VCLDBDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FMXDBDemo">
+        <MSBuild Projects="FMXDBDemo.dproj"/>
+    </Target>
+    <Target Name="FMXDBDemo:Clean">
+        <MSBuild Projects="FMXDBDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMXDBDemo:Make">
+        <MSBuild Projects="FMXDBDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="VCLDBDemo;FMXDBDemo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="VCLDBDemo:Clean;FMXDBDemo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="VCLDBDemo:Make;FMXDBDemo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

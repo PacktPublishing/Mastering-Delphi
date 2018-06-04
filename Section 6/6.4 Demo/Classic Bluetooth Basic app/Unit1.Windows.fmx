@@ -1,0 +1,69 @@
+inherited Form1_Windows: TForm1_Windows
+  ClientWidth = 599
+  DesignerMasterStyle = 0
+  inherited Panel1: TPanel
+    Size.Width = 599.000000000000000000
+    inherited TabControl1: TTabControl
+      Size.Width = 599.000000000000000000
+      Sizes = (
+        599s
+        498s
+        599s
+        498s)
+      inherited TabItem1: TTabItem
+        Size.Width = 298.000000000000000000
+        ExplicitSize.cx = 179.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited PnlDiscover: TPanel
+          Size.Width = 599.000000000000000000
+          inherited ButtonPair: TButton
+            Position.X = 519.000000000000000000
+          end
+          inherited ComboBoxDevices: TComboBox
+            Size.Width = 583.000000000000000000
+          end
+        end
+        inherited PnlPairedDevs: TPanel
+          Size.Width = 599.000000000000000000
+          inherited ButtonUnPair: TButton
+            Position.X = 519.000000000000000000
+          end
+          inherited ComboBoxPaired: TComboBox
+            Size.Width = 583.000000000000000000
+          end
+        end
+        inherited Panel2: TPanel
+          Size.Width = 599.000000000000000000
+        end
+        inherited ListView1: TListView
+          Size.Width = 599.000000000000000000
+        end
+      end
+      inherited TabItem2: TTabItem
+        Size.Width = 299.000000000000000000
+        ExplicitSize.cx = 180.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited PanelClient: TPanel
+          Size.Width = 599.000000000000000000
+          inherited Edit1: TEdit
+            Size.Width = 583.000000000000000000
+          end
+        end
+        inherited PanelServer: TPanel
+          Size.Width = 599.000000000000000000
+          inherited ButtonOpenReadingSocket: TButton
+            Size.Width = 583.000000000000000000
+          end
+        end
+        inherited DisplayR: TMemo
+          Size.Width = 599.000000000000000000
+          Viewport.Width = 599.000000000000000000
+          Viewport.Height = 265.000000000000000000
+        end
+      end
+    end
+    inherited Labeldiscoverable: TLabel
+      Size.Width = 599.000000000000000000
+    end
+  end
+end

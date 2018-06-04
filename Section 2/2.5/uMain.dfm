@@ -1,0 +1,124 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 363
+  ClientWidth = 587
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 257
+    Top = 80
+    Width = 60
+    Height = 25
+    Caption = 'Label1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 128
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 257
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button3: TButton
+    Left = 384
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = 'Button3'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 0
+    Width = 587
+    Height = 29
+    Caption = 'ToolBar1'
+    TabOrder = 3
+    ExplicitLeft = 224
+    ExplicitTop = 184
+    ExplicitWidth = 150
+    object SpeedButton5: TSpeedButton
+      Left = 0
+      Top = 0
+      Width = 23
+      Height = 22
+      AllowAllUp = True
+      GroupIndex = 1
+    end
+    object SpeedButton4: TSpeedButton
+      Left = 23
+      Top = 0
+      Width = 23
+      Height = 22
+      AllowAllUp = True
+      GroupIndex = 1
+    end
+    object SpeedButton3: TSpeedButton
+      Left = 46
+      Top = 0
+      Width = 23
+      Height = 22
+      AllowAllUp = True
+      GroupIndex = 1
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 69
+      Top = 0
+      Width = 23
+      Height = 22
+      AllowAllUp = True
+      GroupIndex = 1
+    end
+    object SpeedButton1: TSpeedButton
+      Left = 92
+      Top = 0
+      Width = 23
+      Height = 22
+      AllowAllUp = True
+      GroupIndex = 1
+    end
+  end
+end
