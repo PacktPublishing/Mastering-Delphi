@@ -20,9 +20,9 @@ Towards the end, you will learn to integrate your app with various web services 
 ## Instructions and Navigation
 ### Assumed Knowledge
 To fully benefit from the coverage included in this course, you will need:<br/>
-Delphi Berlin or newer version
-Delphi programming basics
-Basics of Delphi IDE
+<LI>Delphi Berlin or newer version
+<LI>Delphi programming basics
+<LI>Basics of Delphi IDE
 ### Technical Requirements
 This course has the following software requirements:<br/>
 For an optimal experience with hands-on labs and other practical activities, we recommend the following configuration:
