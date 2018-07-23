@@ -69,7 +69,6 @@ object FormMain: TFormMain
     Align = alTop
     BevelKind = bkSoft
     TabOrder = 1
-    ExplicitWidth = 847
     object btnSave: TButton
       AlignWithMargins = True
       Left = 762
@@ -86,7 +85,6 @@ object FormMain: TFormMain
       ParentFont = False
       TabOrder = 0
       OnClick = btnSaveClick
-      ExplicitLeft = 752
     end
     object DBNavigator1: TDBNavigator
       Left = 1
@@ -114,7 +112,6 @@ object FormMain: TFormMain
       ParentFont = False
       TabOrder = 2
       OnClick = Button1Click
-      ExplicitLeft = 659
     end
   end
   object Chart1: TChart
@@ -127,10 +124,6 @@ object FormMain: TFormMain
     Zoom.Animated = True
     Align = alClient
     TabOrder = 2
-    ExplicitLeft = 248
-    ExplicitTop = 47
-    ExplicitWidth = 400
-    ExplicitHeight = 250
     DefaultCanvas = 'TGDIPlusCanvas'
     PrintMargins = (
       15
@@ -157,21 +150,6 @@ object FormMain: TFormMain
     Width = 857
     HotTrack = True
     TabOrder = 3
-    ExplicitLeft = 336
-    ExplicitTop = 168
-    ExplicitWidth = 185
-  end
-  object ADOConnection1: TADOConnection
-    Connected = True
-    ConnectionString = 
-      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\JavaGuru\D' +
-      'ocuments\Embarcadero\Studio\Projects\Section 3\5\data.mdb;Persis' +
-      't Security Info=False'
-    LoginPrompt = False
-    Mode = cmShareDenyNone
-    Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 112
-    Top = 216
   end
   object DataSource1: TDataSource
     DataSet = ADOQuery1
@@ -186,14 +164,14 @@ object FormMain: TFormMain
     SQL.Strings = (
       'SELECT * FROM Table1'
       'ORDER BY Year')
-    Left = 24
-    Top = 216
+    Left = 72
+    Top = 232
   end
   object SavePictureDialog1: TSavePictureDialog
     Filter = 'Bitmaps (*.bmp)|*.bmp'
     Title = 'Delphi Mastering - Demo 5'
-    Left = 72
-    Top = 120
+    Left = 352
+    Top = 192
   end
   object DBCrossTabSource1: TDBCrossTabSource
     Active = True
@@ -203,5 +181,16 @@ object FormMain: TFormMain
     DataSet = ADOQuery1
     Left = 376
     Top = 96
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=data.mdb;Persist Se' +
+      'curity Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 120
+    Top = 136
   end
 end

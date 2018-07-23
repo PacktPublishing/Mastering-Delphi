@@ -68,23 +68,62 @@ object Form2: TForm2
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'ID'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'FirstName'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'LastName'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Year'
+        Visible = True
+      end>
   end
   object MainMenu1: TMainMenu
-    Left = 464
-    Top = 112
+    Left = 536
+    Top = 192
     object File1: TMenuItem
       Caption = 'File'
     end
   end
   object ADOQuery1: TADOQuery
+    Active = True
     Connection = ADOConnection1
+    CursorType = ctStatic
     Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM tblOne')
     Left = 424
     Top = 192
   end
   object ADOConnection1: TADOConnection
-    Left = 216
-    Top = 200
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=Datab' +
+      'ase.mdb;Mode=Share Deny None;Persist Security Info=False;Jet OLE' +
+      'DB:System database="";Jet OLEDB:Registry Path="";Jet OLEDB:Datab' +
+      'ase Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locki' +
+      'ng Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global B' +
+      'ulk Transactions=1;Jet OLEDB:New Database Password="";Jet OLEDB:' +
+      'Create System Database=False;Jet OLEDB:Encrypt Database=False;Je' +
+      't OLEDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compact Wit' +
+      'hout Replica Repair=False;Jet OLEDB:SFP=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 168
+    Top = 192
   end
   object DataSource1: TDataSource
     DataSet = ADOQuery1

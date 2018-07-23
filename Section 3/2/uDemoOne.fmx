@@ -18,7 +18,7 @@ object Form1: TForm1
     TabOrder = 4
     RowCount = 7
     Viewport.Width = 636.000000000000000000
-    Viewport.Height = 430.000000000000000000
+    Viewport.Height = 414.000000000000000000
   end
   object NavigatorBindSourceDB1: TBindNavigator
     Align = Top
@@ -32,32 +32,35 @@ object Form1: TForm1
   end
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'Database=C:\Users\JavaGuru\Desktop\3.2\Employees.s3db'
-      'DriverID=sQLite')
+      
+        'Database=C:\Users\JavaGuru\Desktop\Slides -Metadata Files - Exam' +
+        'ples Code\Section 3\Section 3 Examples\2\Win32\Debug\Customers.s' +
+        '3db'
+      'DriverID=SQLite')
     Connected = True
     LoginPrompt = False
-    Left = 368
-    Top = 128
+    Left = 392
+    Top = 240
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = FDQuery1
     ScopeMappings = <>
-    Left = 160
-    Top = 264
+    Left = 176
+    Top = 232
   end
   object FDQuery1: TFDQuery
     Active = True
     Connection = FDConnection1
     SQL.Strings = (
-      'SELECT * FROM Employee')
-    Left = 424
-    Top = 264
+      'SELECT * FROM Customers')
+    Left = 272
+    Top = 288
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 292
-    Top = 229
+    Left = 148
+    Top = 325
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1

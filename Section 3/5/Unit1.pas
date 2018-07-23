@@ -3,15 +3,15 @@ unit Unit1;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
-  Data.Win.ADODB, Vcl.ExtCtrls, Vcl.DBCtrls, VclTee.TeeGDIPlus, VCLTee.TeEngine,
-  VCLTee.DBChart, VCLTee.TeeDBCrossTab, VCLTee.Series, VCLTee.TeeProcs,
-  VCLTee.Chart, Vcl.StdCtrls, Vcl.ExtDlgs, RzPanel, RzDlgBtn;
+  Data.Win.ADODB, Vcl.ExtCtrls, Vcl.DBCtrls, VclTee.TeeGDIPlus, VclTee.TeEngine,
+  VclTee.DBChart, VclTee.TeeDBCrossTab, VclTee.Series, VclTee.TeeProcs,
+  VclTee.Chart, Vcl.StdCtrls, Vcl.ExtDlgs, RzPanel, RzDlgBtn;
 
 type
   TFormMain = class(TForm)
-    ADOConnection1: TADOConnection;
     DataSource1: TDataSource;
     ADOQuery1: TADOQuery;
     DBGrid1: TDBGrid;
@@ -24,6 +24,7 @@ type
     Series1: TBarSeries;
     DBCrossTabSource1: TDBCrossTabSource;
     RzDialogButtons1: TRzDialogButtons;
+    ADOConnection1: TADOConnection;
     procedure btnSaveClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
   private
@@ -38,6 +39,9 @@ var
 implementation
 
 {$R *.dfm}
+
+uses
+  System.IOUtils;
 
 procedure TFormMain.btnSaveClick(Sender: TObject);
 begin
