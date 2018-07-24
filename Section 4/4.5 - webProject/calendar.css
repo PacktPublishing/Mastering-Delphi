@@ -1,19 +1,10 @@
 .month-header {
-	background-image:url(https://pre00.deviantart.net/59bb/th/pre/i/2013/219/f/f/dog_stock_329_by_jaded_night_stock-d6h1yxz.jpg);
+	background-image:url(https://delphi.uz/wp-content/uploads/2018/07/photo_2017-04-10_23-11-46-1024x768.jpg);
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover;
     height:300px;
     text-align:right;
-}
-
-.copyright-notice {
-    color:#FFF;
-    font-size:50%;
-    padding-right:50px;
-    text-align:right;
-    text-decoration:none;
-    vertical-align:bottom;
 }
 
 .weekday-header {
@@ -43,7 +34,7 @@
     padding: 5px;
 }
 
-.event.dog-walk {
+.event.delphi-path {
     background-color:#A6F4FF;
     border-radius:5px;
     color:#10171C;
@@ -51,7 +42,7 @@
     margin:5px 0;
 }
 
-.dog-walk {
+.delphi-path {
     background-color:#A6F4FF;
     border-radius:5px;
     color:#10171C;
@@ -112,7 +103,7 @@
     color:#10171C;
     padding:5px;
     margin:5px 0;
-    sbackground-color:#BA9CE8;
+    background-color:#BA9CE8;
 }
 
 .event.holiday {
