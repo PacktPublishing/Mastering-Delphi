@@ -1,4 +1,4 @@
-program DemoApp5_4;
+program Demo5_4;
 
 uses
   System.StartUpCopy,
