@@ -1,0 +1,135 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Demo 1.4'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnSaveState = FormSaveState
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Align = MostLeft
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'drawertoolbutton'
+      Text = 'SpeedButton1'
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    OnItemClick = ListView1ItemClick
+  end
+  object MultiView1: TMultiView
+    MasterButton = SpeedButton1
+    Mode = Drawer
+    Size.Width = 250.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout1: TLayout
+      Align = Client
+      Size.Width = 250.000000000000000000
+      Size.Height = 440.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Button1: TButton
+        Align = Top
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '  Settings Window'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.HorzAlign = Leading
+        OnClick = Button1Click
+        object Image1: TImage
+          MultiResBitmap.Height = 48
+          MultiResBitmap.Width = 48
+          MultiResBitmap = <
+            item
+              Width = 48
+              Height = 48
+              PNG = {
+                89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+                87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                01BA494441546843EDD5CD4B02411400F0376B44502442872E056198D025AB4B
+                9740B083DDBB74F6D23F10041D83A04BDD3A645783E8D407112A42055E4A452C
+                36524A28F05890D887EBB6334E91E6D61AB4A3F87E979937B3326F9C7DB38010
+                42083533C25B5D53B3BE98D6B8CA91B94A00E7E1807F9C873549BCFD8990E429
+                2DB931DED565E40454DACE2FADB3D82C2B8B73AC0D06FC3FE668E4041A1A6E40
+                B4BA6B6039FACADADF2C4CB4F35E59BDBF6B991AC05B4834AC01D1B006446B88
+                1AA87E96C213F88035F0CF7003A219AE01515AFB168AC9D73E0264838742A850
+                F28D3A1D9B3CFC467703B1ABF434514ABB204996AB9B2CEC1C86F98C3966BC1E
+                700CF4D36E5125C43B3A640FB1892A355FA1F8C5F53051608B269F2F14E02072
+                CA67CCB31F3901BAB6A64D5595EDC465C6C126AA7CDBC0992CF7683BD6FE79E8
+                A6F1D171140ACF2F6CCE4C744DBA362581645324652F99CCDAD8C01715AF502A
+                956A7FB37404B5D1493E5497C7A73C24E40C8F6A1B71DAC1DAD5C9A33AA96AE8
+                2177E775BBDD453E5279025AF2AB7F4D9EBABDCFF19E3E23CFE822C463EDED5B
+                E31153710271392DF4CE37CAE51CFCCCBBE9BF03082184501303780785D8AABB
+                C43BA9660000000049454E44AE426082}
+              FileName = 'C:\1.4\E Learning_48px.png'
+            end>
+          Align = MostRight
+          Position.X = 190.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = Button1Click
+        end
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Position.X = 5.000000000000000000
+        Position.Y = 56.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Switch1: TSwitch
+        Align = Top
+        IsChecked = False
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+    end
+  end
+end

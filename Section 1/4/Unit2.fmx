@@ -1,0 +1,43 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Align = MostLeft
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Back'
+      TextSettings.Font.Size = 14.000000000000000000
+      OnClick = SpeedButton1Click
+    end
+  end
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    OnDidStartLoad = WebBrowser1DidStartLoad
+    OnDidFinishLoad = WebBrowser1DidFinishLoad
+  end
+  object AniIndicator1: TAniIndicator
+    Enabled = True
+    Position.X = 296.000000000000000000
+    Position.Y = 192.000000000000000000
+  end
+end
