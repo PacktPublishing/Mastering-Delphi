@@ -1,9 +1,5 @@
 program Demo2_2;
 
-{$APPTYPE CONSOLE}
-
-{$R *.res}
-
 uses
   System.SysUtils;
 
@@ -23,9 +19,7 @@ begin
           Prime := False;
           Break;
         end;
-
       if Prime then WriteLn(I);
     end;
-
   ReadLn;
 end.
